@@ -3,17 +3,16 @@ FROM node:18-alpine AS frontend-builder
 WORKDIR /app
 
 # Copy package files first for better Docker layer caching
-COPY package.json yarn.lock ./
+COPY package.json ./
 
-# Install yarn and dependencies
-RUN npm install -g yarn
-RUN yarn install --frozen-lockfile
+# Install dependencies using npm
+RUN npm install
 
 # Copy source code
 COPY . .
 
 # Build the application
-RUN yarn build
+RUN npm run build
 
 # Production stage
 FROM node:18-alpine AS production
