@@ -1,143 +1,89 @@
-# AI Agency Platform
+# Component Forge
 
-A modern AI Agency website built with React, TypeScript, and Vite, featuring advanced AI agent integration and beautiful UI components.
+A modern React + TypeScript + Vite application featuring a comprehensive UI component library built with Radix UI and Tailwind CSS. This project includes an AI Agents Platform landing page and various interactive components.
 
 ## 🚀 Features
 
-- **Modern React Frontend**: Built with React 19, TypeScript, and Vite
-- **Beautiful UI**: Powered by Radix UI components and Tailwind CSS
-- **AI Agent Integration**: Advanced AI agent architecture with Rowboat
-- **3D Graphics**: Three.js integration for immersive experiences
-- **Responsive Design**: Mobile-first approach with modern animations
-- **Railway Ready**: Pre-configured for Railway deployment
+- **Modern Tech Stack**: React 19, TypeScript, Vite
+- **UI Components**: Comprehensive set of components using Radix UI primitives
+- **Styling**: Tailwind CSS with custom design system
+- **3D Graphics**: Three.js integration with React Three Fiber
+- **Animations**: Framer Motion for smooth interactions
+- **Forms**: React Hook Form with Zod validation
+- **Routing**: React Router DOM for navigation
+- **Dark/Light Mode**: Theme switching capability (currently configured for light mode)
 
-## 🛠️ Tech Stack
+## 🏗️ Project Structure
 
-- **Frontend**: React 19, TypeScript, Vite
-- **Styling**: Tailwind CSS, Framer Motion
-- **UI Components**: Radix UI, Lucide React
-- **3D Graphics**: Three.js, React Three Fiber
-- **Forms**: React Hook Form, Zod validation
-- **Deployment**: Railway, Docker
+- `src/components/` - Reusable UI components and generated components
+- `src/settings/` - Theme and configuration settings
+- `src/lib/` - Utility functions and helpers
+- `src/hooks/` - Custom React hooks
 
-## 🚀 Quick Start
+## 🛠️ Installation
 
-### Prerequisites
-
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/anandbg1978/AIAgency.git
-cd AIAgency
-```
-
-2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Start the development server:
+## 🚀 Development
+
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+## 🏭 Production Build
 
-## 📦 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run format` - Format code with Prettier
-
-## 🚂 Railway Deployment
-
-This project is pre-configured for Railway deployment:
-
-1. Push your code to GitHub
-2. Connect your GitHub repository to Railway
-3. Railway will automatically detect the configuration and deploy
-
-The project includes:
-- `railway.json` - Railway configuration
-- `Dockerfile` - Container configuration
-- Environment variables setup
-
-## 🏗️ Project Structure
-
-```
-├── src/                    # Source code
-├── public/                 # Static assets
-├── dist/                   # Build output
-├── rowboat/               # AI agent architecture
-├── railway.json           # Railway configuration
-├── Dockerfile            # Docker configuration
-├── package.json          # Dependencies and scripts
-└── README.md             # This file
+```bash
+npm run build
+npm run preview
 ```
 
-## 🤖 AI Agent Integration
+## 📦 Deployment
 
-The project includes Rowboat AI agent architecture for:
-- Intelligent conversation handling
-- Advanced AI capabilities
-- Seamless integration with the frontend
+This project is configured for deployment on Railway with:
+- Dockerfile for containerized deployment
+- `railway.json` configuration file
+- Environment variable support
 
-## 🎨 UI Components
+### Railway Deployment
 
-Built with modern, accessible components:
-- Radix UI primitives
-- Custom styled components
-- Responsive design patterns
-- Dark/light theme support
-
-## 📱 Responsive Design
-
-- Mobile-first approach
-- Tablet and desktop optimized
-- Touch-friendly interactions
-- Progressive enhancement
+1. Connect your GitHub repository to Railway
+2. Railway will automatically detect the `railway.json` configuration
+3. The app will be built and deployed using the specified build and start commands
 
 ## 🔧 Configuration
 
-Environment variables can be configured in Railway or locally:
-- See `env.example` for available options
-- Configure AI agent settings
-- Set up database connections
+- **Build Command**: `npm run build`
+- **Start Command**: `npm run preview`
+- **Port**: Automatically configured for Railway
 
-## 🚀 Deployment
+## 📱 Routes
 
-### Railway (Recommended)
+- `/` - AI Agents Platform Landing Page
+- `/rowboat` - Rowboat Integration Page
 
-1. Connect your GitHub repository to Railway
-2. Railway will automatically build and deploy
-3. Configure environment variables in Railway dashboard
+## 🎨 Components
 
-### Manual Deployment
+The project includes a rich set of UI components:
+- Buttons, Cards, Dialogs
+- Form components (Input, Select, Checkbox, etc.)
+- Navigation components
+- Data display components
+- Feedback components (Alerts, Toast, etc.)
 
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to your hosting provider
+## 🌟 Key Dependencies
+
+- **React**: ^19.0.0
+- **TypeScript**: ~5.7.2
+- **Vite**: ^6.2.0
+- **Tailwind CSS**: ^4.0.9
+- **Radix UI**: Various component primitives
+- **Framer Motion**: ^12.4.10
+- **Three.js**: ^0.175.0
+- **React Hook Form**: ^7.54.2
+- **Zod**: ^3.24.2
 
 ## 📄 License
 
-This project is licensed under the MIT License.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📞 Support
-
-For support and questions, please open an issue on GitHub.
-
----
-
-Built with ❤️ using modern web technologies
+This project is private and proprietary.
