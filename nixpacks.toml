@@ -1,8 +1,12 @@
+[providers]
+node = "20"
+
 [phases.build]
 cmds = ["npm ci", "npm run build"]
 
 [phases.start]
-cmd = "npm start"
+cmd = "npm run start"
 
 [variables]
-NODE_ENV = "production" 
+NODE_ENV = "production"
+PORT = "3000" 
