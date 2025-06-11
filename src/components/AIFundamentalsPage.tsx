@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Cpu, ArrowLeft, Brain, Zap, Users, Lightbulb, ArrowRight, Bot, Database, Search, FileText, Settings } from "lucide-react";
+import { Cpu, ArrowLeft, Brain, Zap, Lightbulb, Bot, Database, Search, FileText, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ConceptCard = ({ 
