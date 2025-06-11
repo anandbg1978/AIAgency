@@ -22,5 +22,5 @@ RUN npm install -g serve
 # Expose port
 EXPOSE 3000
 
-# Start the application
-CMD ["serve", "-s", "dist", "-l", "3000"] 
+# Start the application and bind to all interfaces
+CMD ["serve", "-s", "dist", "-p", "3000", "-H", "0.0.0.0"] 
