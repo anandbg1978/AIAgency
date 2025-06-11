@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm ci
 
 # Copy source code
 COPY . .
@@ -16,11 +16,8 @@ COPY . .
 # Build the application
 RUN npm run build
 
-# Install a simple static file server
-RUN npm install -g serve
-
 # Expose port
 EXPOSE 3000
 
-# Start the application and bind to all interfaces
-CMD ["serve", "-s", "dist", "-p", "3000", "-H", "0.0.0.0"] 
+# Use the npm start script which is already configured properly
+CMD ["npm", "start"] 
